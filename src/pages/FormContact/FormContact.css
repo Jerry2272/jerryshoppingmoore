@@ -1,0 +1,55 @@
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.form .form-control {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form .form-control input {
+   width: 100%;
+    outline: 1px solid gray;
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+}
+.form .form-control  textarea{
+   width: 100%;
+    outline: 1px solid gray;
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+  margin: auto;
+}
+.form .form-control label{
+    font-weight: 500;
+}
+.form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px 25px;
+    margin: auto;
+}
+
+
+@media (min-width: 992px) {
+  
+.form .form-control  textarea , .form .form-control input
+    {
+    min-width: 100%;
+    width: 600px;
+    }
+}

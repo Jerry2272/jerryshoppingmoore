@@ -1,0 +1,44 @@
+.footer{
+    height: 200px;
+    width: 100%;
+    background: radial-gradient(rgba(51, 51, 51,1), rgba(0, 0, 0,1)), url('../../assets/images.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.footer h5{
+    font-size: 1.70rem;
+    font-weight: 500;
+    line-height: normal;
+}
+.iconFooter{
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items: center;
+}
+.footer ul  li:hover{
+    color: blue;
+}
+
+.footer ul {
+    margin-top: 30px;
+}
+.footer ul .Footer-navLink{
+    margin-left: 8px ;
+}
+
+@media (min-width: 992px) {
+   .footer ul {
+       display: flex; 
+       gap: 30px; 
+       justify-content: center; 
+       margin: auto; 
+       padding: 20px 0
+   }
+}

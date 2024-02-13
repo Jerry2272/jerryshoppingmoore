@@ -1,0 +1,74 @@
+.otherProductList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5em auto;
+    padding: auto auto;
+}
+.otherProductList .filterArea input{
+    border: 1px solid #333;
+    border-radius: 1px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    height: 40px;
+    text-align: left;
+}
+.otherProductList h1 {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.searchProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.searchProduct .cardProduct{
+    width: 300px;
+    height: 430px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid #333;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+.searchProduct .cardProduct:hover{
+    transform: scale(1.03);
+}
+.searchProduct .cardProduct h2{
+    font-size: 1.02em;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+} 
+
+.searchProduct .cardProduct .img-div{
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+}
+.searchProduct .cardProduct img{
+     width: 100%;
+     height: 100%;
+    margin: auto;
+}
+
+
+@media (max-width: 628px) {
+    .otherProductList h1 {
+        font-size: 2.30em;
+        line-height: 2em;
+    }
+}

@@ -1,38 +1,233 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* hero section starting */
+.hero-section{
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  background: url('../src/assets/bg-watct1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 50px 10px;
+}
+.hero-section .hero-content h1{
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  line-height: 2.1rem;
+  font-weight: bold;
+}
+.hero-section .hero-content p{
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgba(255, 255, 255,0.65);
+}
+.hero-section .hero-content{
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.hero-section .hero-content a{
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.10ms ease-in;
+}
+.hero-section .hero-content a:hover{
+  background-color: rgba(255, 255, 255, 0.67);
+  color: #000;
+}
+.hero-section .overlay{
+background: linear-gradient(rgba(0,0,0,0.83), rgba(9, 3, 3, 0.64));
+  position: absolute;
+  inset: 0;
+}
+
+/* hero section ending  */
+
+/* product Display start  */
+.productDisplay{
+  background: lightgray;
+  height: auto;
+width: 100%;
+margin: auto auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px 100px;
+}
+
+/* aboutPage section  */
+.aboutPage{
+  background: linear-gradient(rgba(51, 51, 51,0.65), rgba(0, 0, 0, 1)), url('..//src/assets/glass3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px auto;
+  color: #fff;
+}
+.aboutPage h1{
+  font-size: 3em;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+/* aboutPage section ending */
+
+/* contact page  */
+.contactForm{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  padding-right: 10px;
+}
+.contactForm .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactForm .container .formDiv{
+  width: 100%;
+  text-align: start;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.contactForm .container .mapDiv{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.contactForm .container .mapDiv iframe{
+  width: 100%;
+  height: 400px;
+}
+.contactForm .container .formDiv h1{
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0;
+}
+.contactForm ul li{
+  display: flex;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.contactForm ul li .fa{
+  margin-right: 20px;
+  transform: translateY(5px);
+}
+/* contact page ending   */
+
+
+/* Cart List display  */
+.cartList{
+  background: linear-gradient(rgba(51, 51, 51,0.65), rgba(0, 0, 0, 1)), url('..//src/assets/airpod7.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px auto;
+  color: #fff;
+}
+/* Cart List display  ending*/
+
+
+/* otherProduct  */
+.otherProduct{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(51, 51, 51,0.65), rgba(0, 0, 0, 1)), url('..//src/assets/watch2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.otherProduct h1{
+  font-size: 3em;
+  font-weight: bold;
 }
+/* otherProduct ending */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* cartProduct section  */
+.cartProduct{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* cartProduct section ending */
+
+@media (min-width: 992px){
+  .hero-section{
+    margin-top: 4.40rem;
+    padding: 100px 0;
+  }
+  .hero-section .hero-content h1{
+    font-size: 2.5em;
+    line-height: 2.8rem;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 628px){
+  /* about page  */
+  .aboutPage, .otherProduct{
+    height: 100vh;
+  }
+  .aboutPage h1{
+    margin-bottom: 50px;
+  }
+
+  /* about page ending */
+
+   /* .otherProduct */
+   .otherProduct h1{
+    line-height: 2.70rem;
+    margin-bottom: 40px;
+   }
+   /*.otherProduct ending */
+
+
+   .contactForm .container{
+  flex-direction: column;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

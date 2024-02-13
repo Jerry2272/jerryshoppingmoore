@@ -1,0 +1,21 @@
+.products {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+.products h1{
+ font-size: 3em;
+ font-weight: 600;
+ color: #333;
+ position: relative;
+ text-align: center;
+}
+.products h1::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+     width: 200px;
+     background-color: #333;
+     transform: translateY(70px);
+     margin: auto;
+}
