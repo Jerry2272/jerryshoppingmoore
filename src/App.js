@@ -14,7 +14,7 @@ import { ContextApi } from './contextApi/ContextApi'; // Import the context prov
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter  basename="/jerryshoppingmoore">
         <Navbar />
         {/* Wrap your Routes and components with the context provider */}
         <ContextApi>
